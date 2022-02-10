@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Particles JS</title>
+
+</head>
+
+<body>
+
+    <div class="canvas-container">
+        <canvas id="canvas" width="900px" height="700px"></canvas>
+    </div>
+
+    <div id="settings">
+        
+        <h2>Settings</h2>
+
+        <hr>
+
+       <p>Emission radius</p>
+        <input type="range" name="emission-radius" min="0" max="350" step="0.01" value="0" id="radius-slider" class="slider">
+
+        <hr>
+
+        <p>Angle</p>
+        <input type="range" name="angle" min="0" max="6.28" step="0.01" value="0" id="angle-slider" class="slider">
+
+        <br>
+
+        <p>Spread</p>
+        <input type="range" name="spread" min="0" max="6.28" step="0.01" value="0.79" id="spread-slider" class="slider">
+
+        <hr>
+        <p>Min speed</p>
+        <input type="range" name="min-speed" min="0" max="50" step="0.01" value="0" id="minspeed-slider" class="slider">
+
+        <br>
+
+        <p>Max speed</p>
+        <input type="range" name="max-speed" min="0" max="50" step="0.01" value="10" id="maxspeed-slider" class="slider">
+
+        <hr>
+
+        <p>Life span</p>
+        <input type="range" name="lifespan" min="0" max="20" step="0.01" value="1" id="lifespan-slider" class="slider">
+
+        <hr>
+
+        <p>Gravity X</p>
+        <input type="range" name="gravity-x" min="-5", max="5", step="0.1" value="0" id="gravity-x-slider" class="slider">
+
+        <p>Gravity Y</p>
+        <input type="range" name="gravity-y" min="-5", max="5", step="0.1" value="0.5" id="gravity-y-slider" class="slider">
+
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
